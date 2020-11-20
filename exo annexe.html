@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language ="JavaScript">
+
+function afficheImage(saison){
+ switch (saison) {
+ case 'printemps' :
+ document.images[0].src = "photo_printemps.jpg"
+ break
+ case 'ete' :
+ document.images[0].src = "photo_ete.jpg"
+ break
+ case 'hiver' :
+ document.images[0].src = "photo_hiver.jpg"
+ break
+ case 'automne' :
+ document.images[0].src = "photo_automne.jpg"
+ break
+ default :
+ document.images[0].src = "photo_vide.jpg"
+
+ } 
+}
+</script>
+</head>
+<body>
+<center>
+
+<A href="javascript:afficheImage('printemps')"> cliquer ici pour voir une image printemps </A><br>
+<A href="javascript:afficheImage('ete')"> cliquer ici pour voir une image ete </A><br>
+<A href="javascript:afficheImage('automne')"> cliquer ici pour voir une image automne </A><br>
+<A href="javascript:afficheImage('hiver')"> cliquer ici pour voir une image hiver </A><br>
+<A href="javascript:afficheImage('vide')"> cliquer ici pour voir une photo vide </A><br>
+<IMG SRC="photo_vide.jpg">
+</center>
+</body>
+</html>
